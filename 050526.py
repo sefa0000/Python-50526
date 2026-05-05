@@ -8,5 +8,12 @@ def round_custom(x):
         return tam_kisim
 
 
-sayi = float(input("Bir sayi gir: "))
-print("Sonuc:", round_custom(sayi))
+while True:
+    giris = input("Bir sayi gir (cikmak icin q): ")
+
+    if giris.lower() == "q":
+        print("Program kapatildi.")
+        break
+
+    sayi = float(giris)
+    print("Sonuc:", round_custom(sayi))
